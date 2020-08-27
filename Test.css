@@ -1,0 +1,128 @@
+* {
+     margin:0;
+     padding:0;
+ } 
+body {
+    background: white;
+    position: relative;
+    font-family: Arial;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#container {
+  position: relative;
+  width: 300px;
+  height: 230px;
+  background: yellow;
+  border: 3px solid black;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#cloud {
+    width: 95px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 290px;
+    position: absolute;
+    z-index: 2;
+}
+#tree {
+    width: 45px;
+    height: auto;
+    margin-top: 175px;
+    margin-left: 340px;
+    position: absolute;
+    z-index: 2;
+}
+#tran_dan {
+  transition: all 0.35s;
+  height: auto;
+  margin-top: 158px;
+  margin-left: 20px;
+  position: absolute;
+  z-index: 1;
+}
+
+#up {
+  width: 25px;
+  position: absolute;
+  z-index: 2;
+}
+#left {
+  width: 17px;
+  position: relative;
+ top: 35px;
+  transition: all 0.05s;
+}
+#right {
+  width: 12px;
+  position: relative;
+  left: -4px;
+  top: 35px;
+  transition: all 0.05s;
+}
+
+#line {
+  height: 2px;
+  background: gray;
+  position: relative;
+  top: 210px;
+}
+
+#jump {
+  position: relative;
+  top: 70px;
+  margin: 0 auto;
+  display: block;
+  background-color: #f4511e; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  outline: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  cursor: pointer;
+}
+
+#jump:active {
+  background-color: #f4511e;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#score {
+  background: black;
+  height: 40px;
+  width: 100px;
+  position: relative;
+  top: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+#status {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 5px;
+  color: black;
+  font-weight: bold;
+  opacity: 0.4;
+}
+
+#huanroseIMG {
+  width: 250px;
+  position: relative;
+  display: none;
+  margin: 0 auto;
+  top: 100px;
+  border-radius: 20px;
+  border: 2px solid black;
+  animation: fadein 10s;
+}
